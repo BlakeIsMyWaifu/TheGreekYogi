@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/thegreekyogi/static/css/main.1060bd33.chunk.css",
-    "main.js": "/thegreekyogi/static/js/main.187b7f82.chunk.js",
-    "main.js.map": "/thegreekyogi/static/js/main.187b7f82.chunk.js.map",
+    "main.js": "/thegreekyogi/static/js/main.fc8d2dff.chunk.js",
+    "main.js.map": "/thegreekyogi/static/js/main.fc8d2dff.chunk.js.map",
     "runtime-main.js": "/thegreekyogi/static/js/runtime-main.dc63d50d.js",
     "runtime-main.js.map": "/thegreekyogi/static/js/runtime-main.dc63d50d.js.map",
     "static/js/2.1ae3648a.chunk.js": "/thegreekyogi/static/js/2.1ae3648a.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.dc63d50d.js",
     "static/js/2.1ae3648a.chunk.js",
     "static/css/main.1060bd33.chunk.css",
-    "static/js/main.187b7f82.chunk.js"
+    "static/js/main.fc8d2dff.chunk.js"
   ]
 }
