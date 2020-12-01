@@ -1,0 +1,10 @@
+@import '../../colours';
+
+.content {
+	position: absolute;
+	// height: calc(100% - 120px);
+	top: 120px;
+	margin: 0 5%;
+	color: $textColour;
+	padding-bottom: 60px;
+}
