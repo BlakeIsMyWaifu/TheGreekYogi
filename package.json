@@ -2,7 +2,7 @@
   "name": "the-greek-yogi",
   "version": "1.0.0",
   "description": "react app",
-  "homepage": "https://blakeismywaifu.github.io/thegreekyogi/",
+  "homepage": "https://blakeismywaifu.github.io/TheGreekYogi/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
