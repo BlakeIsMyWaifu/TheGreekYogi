@@ -1,4 +1,4 @@
-import svg from 'assets/contact.svg'
+import contactSvg from 'assets/contact.svg'
 
 export default {
 	id: 'contact',
@@ -10,7 +10,7 @@ export default {
 	},
 	image: {
 		imgStart: false,
-		img: svg,
+		img: contactSvg,
 		alt: 'one'
 	},
 	button: {

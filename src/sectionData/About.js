@@ -1,4 +1,4 @@
-import svg from 'assets/stability.svg'
+import stabilitySvg from 'assets/stability.svg'
 
 export default {
 	id: 'about',
@@ -10,7 +10,7 @@ export default {
 	},
 	image: {
 		imgStart: false,
-		img: svg,
+		img: stabilitySvg,
 		alt: 'one'
 	},
 	button: {

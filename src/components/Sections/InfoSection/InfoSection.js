@@ -1,9 +1,9 @@
-import react from 'react'
+import React from 'react'
 
 import Button from 'components/Button'
 import useWindowSize from 'utils/Size'
 
-import { BtnWrap, Category, Column1, Column2, Description, Heading, Img, ImgWrap, InfoContainer, InfoRow, InfoWrapper, MoreContainer, MoreWrapper, TextWrapper } from './InfoSectionElements'
+import { BtnWrap, Category, Column1, Column2, Description, Heading, Img, ImgWrap, InfoContainer, InfoRow, InfoWrapper, TextWrapper } from './InfoSectionElements'
 
 const InfoSection = ({ id, format, text, image, button, toggle, show }) => {
 

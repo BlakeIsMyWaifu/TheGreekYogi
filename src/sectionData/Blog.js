@@ -1,4 +1,4 @@
-import svg from 'assets/social.svg'
+import SpcoailSvg from 'assets/social.svg'
 
 export default {
 	id: 'blog',
@@ -10,7 +10,7 @@ export default {
 	},
 	image: {
 		imgStart: true,
-		img: svg,
+		img: SpcoailSvg,
 		alt: 'one'
 	},
 	button: {
