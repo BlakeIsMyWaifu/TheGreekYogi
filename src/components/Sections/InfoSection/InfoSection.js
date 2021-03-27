@@ -28,7 +28,7 @@ const InfoSection = ({ id, format, text, image, button, toggle, show }) => {
 						<TextWrapper>
 							<Category>{text.category}</Category>
 							<Heading format={format}>{text.title}</Heading>
-							<Description format={format}>{text.description}</Description>
+							<Description format={format}>{typeof text.description === 'string' ? text.description : text.description()}</Description>
 							<BtnWrap>
 								{ button ?
 									<Button {...ButtonProps}>{button?.extend ? (show ? 'Hide ' : 'Reveal ') : ''}{button.text}</Button>
