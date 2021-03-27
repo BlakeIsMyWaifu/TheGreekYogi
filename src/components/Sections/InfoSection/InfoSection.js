@@ -16,7 +16,7 @@ const InfoSection = ({ id, format, text, image, button, toggle, show }) => {
 		duration: 500,
 		spy: true,
 		exact: 'true',
-		offset: button?.extend && !show ? -80 - (height / 3) : -80,
+		offset: -80,
 		onClick: button?.extend ? toggle : null
 	}
 
