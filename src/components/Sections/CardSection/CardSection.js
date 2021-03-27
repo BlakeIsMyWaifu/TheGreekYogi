@@ -17,9 +17,7 @@ const CardSection = ({ id, format, data }) => {
 			<CardsH1 format={format}>Classes</CardsH1>
 			<CardsWrapper>
 				{
-					Object.keys(data).map(i => {
-						return <Card {...data[i]} key={i} format={format} openCard={openCard} toggleCard={toggleCard}/>
-					})
+					Object.keys(data).map(i => <Card {...data[i]} key={i} format={format} openCard={openCard} toggleCard={toggleCard}/>)
 				}
 			</CardsWrapper>
 		</CardsContainer>

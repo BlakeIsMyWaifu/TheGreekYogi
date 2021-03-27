@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import { black, green, white } from 'utils/colours';
 
 export const Nav = styled.nav`
-	background: ${({ scrollNav }) => (scrollNav ? 'rgba(0, 0, 0, 0.8)' : 'transparent')};
+	background: ${({ scrollNav }) => scrollNav ? 'rgba(0, 0, 0, 0.8)' : 'transparent'};
 	height: 80px;
 	margin-top: -80px;
 	display: flex;

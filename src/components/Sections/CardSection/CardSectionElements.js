@@ -9,7 +9,7 @@ export const CardsContainer = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: ${({ format }) => (format ? white : black)};
+	background: ${({ format }) => format ? white : black};
 	@media screen and (max-width: 768px) {
 		height: 1100px;
 		justify-content: flex-start;
@@ -22,7 +22,7 @@ export const CardsContainer = styled.div`
 
 export const CardsH1 = styled.h1`
 	font-size: 3rem;
-	color: ${({ format }) => (format ? black : white)};
+	color: ${({ format }) => format ? black : white};
 	margin-bottom: 64px;
 	@media screen and (max-width: 480px) {
 		font-size: 2rem;

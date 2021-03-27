@@ -25,7 +25,7 @@ const slideDown = keyframes`
 `
 
 const Container = css`
-	background: ${({ format }) => (format ? black : white)};
+	background: ${({ format }) => format ? black : white};
 	border-radius: 10px;
 	max-height: 340px;
 	padding: 30px;
@@ -72,14 +72,14 @@ export const CardIcon = styled.img`
 export const CardH2 = styled.h2`
 	font-size: 1.2rem;
 	margin-bottom: 10px;
-	color: ${({ format }) => (format ? white : black)};
+	color: ${({ format }) => format ? white : black};
 `
 
 export const CardP = styled.p`
 	font-size: 1rem;
 	text-align: center;
 	margin-bottom: 10px;
-	color: ${({ format }) => (format ? white : black)};
+	color: ${({ format }) => format ? white : black};
 	white-space: pre-wrap;
 	@media screen and (max-width: 768px) {
 		font-size: 0.8rem;
