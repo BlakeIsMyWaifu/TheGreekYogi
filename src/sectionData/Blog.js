@@ -20,6 +20,16 @@ export default {
 	},
 	more: [
 		{
+			title: 'Satnam (SAT = truth   NAM = my name, identity)',
+			description: [
+				'Kundalini Yoga is the limb of yoga that will unify your mind, body and soul to enable you to connect with the teacher within you and trust and follow your intuition in everyday life situations.',
+				'You will find that your body will feel physically stronger, your mind will be sharper and you will face obstacles with clarity.',
+				'Your stress levels will start dipping low and a greater form of well-being will surround you.',
+				'There are many Kundalini Yoga sets that will target specific organs, body systems  and light up your way in your mental and spiritual paths.',
+				'Kundalini practice has no levels; beginner, intermediate, advanced, we all practice together, in one unified group energy to the best of our ability. There is no competition in our practice.'
+			]
+		},
+		{
 			title: 'Kundalini Yoga Class - what to expect.',
 			description: [
 				'In Kundalini Yoga, we practice specific sets or Kriyas that will target specific physical parts of the body/organs as well as specific energetic parts like chakras and other energy points.',
