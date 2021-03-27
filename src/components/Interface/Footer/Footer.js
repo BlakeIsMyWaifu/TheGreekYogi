@@ -18,13 +18,13 @@ const Footer = () => {
 						<SocialLogo to='/' onClick={toggleHome}>TheGreekYogi</SocialLogo>
 						<WebsiteRights>TheGreekYogi © {new Date().getFullYear()}, All rights reserved</WebsiteRights>
 						<SocialIcons>
-							<SocialIconLink href='//facebook.com/thegreekyogi' target='_blank' aria-label='Facebook' rel="noopener noreferrer">
+							<SocialIconLink href='//facebook.com/thegreekyogi' target='_blank' aria-label='Facebook' rel='noopener noreferrer'>
 								<FaFacebook onDragStart={preventDragHandler}/>
 							</SocialIconLink>
-							<SocialIconLink href='//twitter.com/greek_yogi' target='_blank' aria-label='Twitter' rel="noopener noreferrer">
+							<SocialIconLink href='//twitter.com/greek_yogi' target='_blank' aria-label='Twitter' rel='noopener noreferrer'>
 								<FaTwitter onDragStart={preventDragHandler}/>
 							</SocialIconLink>
-							<SocialIconLink href='//instagram.com/thegreekyogi' target='_blank' aria-label='Instagram' rel="noopener noreferrer">
+							<SocialIconLink href='//instagram.com/thegreekyogi' target='_blank' aria-label='Instagram' rel='noopener noreferrer'>
 								<FaInstagram onDragStart={preventDragHandler}/>
 							</SocialIconLink>
 						</SocialIcons>
