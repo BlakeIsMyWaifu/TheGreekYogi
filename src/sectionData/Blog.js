@@ -5,8 +5,8 @@ export default {
 	format: 0,
 	text: {
 		category: 'Blog',
-		title: 'My Blog About Stuff And Things',
-		description: 'This is a blog about said stuff and things.',
+		title: 'Blog About Yoga',
+		description: 'Yoga short articles and information',
 	},
 	image: {
 		imgStart: true,

@@ -5,8 +5,8 @@ export default {
 	format: 1,
 	text: {
 		category: 'About',
-		title: 'About Yoga',
-		description: 'What is yoga? Why do yoga? yes',
+		title: 'About @TheGreekYogi',
+		description: '',
 	},
 	image: {
 		imgStart: false,
@@ -22,7 +22,7 @@ export default {
 		{
 			title: 'The Calling',
 			description: [
-				'Tried Yoga to try to benefit my passion in freediving and scuba-diving; some months later it became a way of life, the only way forward was to share this way of life.',
+				'I tried Yoga to try to benefit my passion in freediving and scuba-diving; some months later it became a way of life, the only way forward was to share this way of life.',
 				'I first tried a yoga class experimentally, after reading a book about freediving. In some casual conversation with fellow divers it was mentioned that a calm, steady, yogi style breath pattern will help with air consumption enabling longer dives. By chance, I met Lila, a yoga teacher, working part time in my local bakery and the rest is history. I started going to her class once a week, which, very fast, developed to thrice weekly. She encouraged me to follow the path of the teachings and join a Teacher Training Program.'
 			]
 		},

@@ -28,7 +28,7 @@ export default {
 	format,
 	text: {
 		category: 'Contact',
-		title: 'Where to Contact',
+		title: 'How to Contact',
 		description
 	},
 	image: {

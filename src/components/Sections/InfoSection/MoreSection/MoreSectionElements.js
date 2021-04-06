@@ -15,6 +15,9 @@ export const MoreWrapper = styled.div`
 	padding: 20px;
 `
 
-export const MoreTitle = styled.h1``
+export const MoreTitle = styled.p`
+	padding-left: 24px;
+	font-size: 20px;
+`
 
 export const MoreDescription = styled.p``
