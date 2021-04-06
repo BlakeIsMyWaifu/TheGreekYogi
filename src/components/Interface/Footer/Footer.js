@@ -15,7 +15,7 @@ const Footer = () => {
 			<FooterWrap>
 				<SocialMedia>
 					<SocialMediaWrap>
-						<SocialLogo to='/TheGreekYogi/' onClick={toggleHome}>TheGreekYogi</SocialLogo>
+						<SocialLogo to='/' onClick={toggleHome}>TheGreekYogi</SocialLogo>
 						<WebsiteRights>TheGreekYogi © {new Date().getFullYear()}, All rights reserved</WebsiteRights>
 						<SocialIcons>
 							<SocialIconLink href='//facebook.com/thegreekyogi' target='_blank' aria-label='Facebook' rel='noopener noreferrer'>

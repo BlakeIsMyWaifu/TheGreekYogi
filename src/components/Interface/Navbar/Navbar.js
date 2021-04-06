@@ -20,7 +20,7 @@ const Navbar = ({ navbarToggle }) => {
 	return (
 		<Nav scrollNav={scrollNav}>
 			<NavbarContainer>
-				<NavLogo to='/TheGreekYogi/' onClick={toggleHome}>
+				<NavLogo to='/' onClick={toggleHome}>
 					<NavLogoImage src={logo} alt='logo'></NavLogoImage>
 				</NavLogo>
 				<MobileIcon onClick={navbarToggle}>
