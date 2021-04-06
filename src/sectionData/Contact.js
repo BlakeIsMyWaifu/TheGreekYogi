@@ -15,7 +15,7 @@ const Link = styled.a`
 const description = () => {
 	return (
 		<>
-			<Link href='mailto:stratiskaratjas@yahoo.co.uk' target='_blank' rel='noopener noreferrer'><FaEnvelope /> stratiskaratjas@yahoo.co.uk </Link> <br></br>
+			<Link href='mailto:stratis@thegreekyogi.info' target='_blank' rel='noopener noreferrer'><FaEnvelope /> stratis@thegreekyogi.info </Link> <br></br>
 			<Link href='//facebook.com/thegreekyogi' target='_blank' rel='noopener noreferrer'><FaFacebook /> facebook.com/thegreekyogi </Link> <br></br>
 			<Link href='//twitter.com/greek_yogi' target='_blank' rel='noopener noreferrer'><FaTwitter /> twitter.com/greek_yogi </Link> <br></br>
 			<Link href='//instagram.com/thegreekyogi' target='_blank' rel='noopener noreferrer'><FaInstagram /> instagram.com/thegreekyogi </Link>
