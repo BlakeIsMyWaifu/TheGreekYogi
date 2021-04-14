@@ -20,10 +20,22 @@ export default {
 	},
 	more: [
 		{
+			title: '',
+			description: [
+				'I am a Kundalini Yoga Teacher, a complementary health and well-being advisor for over twenty five years and also a scuba diving Instructor. I have practiced yoga for over ten years. I am passionate about yoga as the perfect way to grow stronger, more flexible and resilient, both on and off the mat, I create a friendly, relaxed and welcoming class that will help build strength, flexibility, and re-balance body and mind.'
+			]
+		},
+		{
+			title: '',
+			description: [
+				'My other passion is diving, I have been teaching scuba diving for twelve years, having spent every free moment in the sea since childhood. I enjoy teaching and like to share the magic of the ocean and the yoga teachings.'
+			]
+		},
+		{
 			title: 'The Calling',
 			description: [
 				'I tried Yoga to try to benefit my passion in freediving and scuba-diving; some months later it became a way of life, the only way forward was to share this way of life.',
-				'I first tried a yoga class experimentally, after reading a book about freediving. In some casual conversation with fellow divers it was mentioned that a calm, steady, yogi style breath pattern will help with air consumption enabling longer dives. By chance, I met Lila, a yoga teacher, working part time in my local bakery and the rest is history. I started going to her class once a week, which, very fast, developed to thrice weekly. She encouraged me to follow the path of the teachings and join a Teacher Training Program.'
+				'I first tried a yoga class experimentally, after reading a book about freediving. In some casual conversation with fellow divers it was mentioned that a calm, steady, yogi style breath pattern will help with air consumption enabling longer dives. By chance, I met Lila, a yoga teacher, working part time in my local bakery and the rest is history. I started going to her class once a week in 2010, which, very fast, developed to, to date, thrice weekly. She was the one to encourage me to follow the path of the teachings and join a Teacher Training Program.'
 			]
 		},
 		{
