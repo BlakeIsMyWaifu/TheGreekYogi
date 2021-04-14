@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "./static/css/main.bf9861df.chunk.css",
-    "main.js": "./static/js/main.df53b09a.chunk.js",
-    "main.js.map": "./static/js/main.df53b09a.chunk.js.map",
+    "main.js": "./static/js/main.54e72b7e.chunk.js",
+    "main.js.map": "./static/js/main.54e72b7e.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.d8a277e5.js",
     "runtime-main.js.map": "./static/js/runtime-main.d8a277e5.js.map",
     "static/js/2.7b2e2995.chunk.js": "./static/js/2.7b2e2995.chunk.js",
@@ -12,9 +12,10 @@
     "static/js/2.7b2e2995.chunk.js.LICENSE.txt": "./static/js/2.7b2e2995.chunk.js.LICENSE.txt",
     "static/media/BeachVideo.c5d19e49.mp4": "./static/media/BeachVideo.c5d19e49.mp4",
     "static/media/contact.ccae12d4.svg": "./static/media/contact.ccae12d4.svg",
-    "static/media/logo_white.05b3eb63.png": "./static/media/logo_white.05b3eb63.png",
+    "static/media/logo_green.25b20af9.png": "./static/media/logo_green.25b20af9.png",
     "static/media/mindfulness.3e139230.svg": "./static/media/mindfulness.3e139230.svg",
-    "static/media/social.09091170.svg": "./static/media/social.09091170.svg",
+    "static/media/pilates.4cd6ca4d.svg": "./static/media/pilates.4cd6ca4d.svg",
+    "static/media/social.1e7c7578.svg": "./static/media/social.1e7c7578.svg",
     "static/media/stability.600a4909.svg": "./static/media/stability.600a4909.svg",
     "static/media/yoga.1f9d672a.svg": "./static/media/yoga.1f9d672a.svg"
   },
@@ -22,6 +23,6 @@
     "static/js/runtime-main.d8a277e5.js",
     "static/js/2.7b2e2995.chunk.js",
     "static/css/main.bf9861df.chunk.css",
-    "static/js/main.df53b09a.chunk.js"
+    "static/js/main.54e72b7e.chunk.js"
   ]
 }
