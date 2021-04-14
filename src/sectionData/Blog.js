@@ -1,4 +1,4 @@
-import SpcoailSvg from 'assets/social.svg'
+import SpcoailSvg from 'assets/svg/social.svg'
 
 export default {
 	id: 'blog',

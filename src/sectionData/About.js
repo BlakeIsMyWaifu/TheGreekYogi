@@ -1,4 +1,4 @@
-import stabilitySvg from 'assets/stability.svg'
+import stabilitySvg from 'assets/svg/stability.svg'
 
 export default {
 	id: 'about',

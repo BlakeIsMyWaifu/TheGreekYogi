@@ -2,7 +2,7 @@ import React from 'react'
 import { FaEnvelope, FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
 import styled from 'styled-components'
 
-import contactSvg from 'assets/contact.svg'
+import contactSvg from 'assets/svg/contact.svg'
 import { black, white } from 'utils/colours'
 
 const format = 1;

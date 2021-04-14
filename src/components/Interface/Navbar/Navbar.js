@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { FaBars } from 'react-icons/fa'
 import { animateScroll as scroll } from 'react-scroll'
 
-import logo from 'assets/logo_green.png'
+import logo from 'assets/logo/logo_green.png'
 
 import { MobileIcon, Nav, NavbarContainer, NavItem, NavLinks, NavLogo, NavLogoImage, NavMenu } from './NavbarElements'
 

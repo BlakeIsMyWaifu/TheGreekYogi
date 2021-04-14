@@ -1,5 +1,5 @@
-import meditationSvg from 'assets/mindfulness.svg'
-import yogaSvg from 'assets/yoga.svg'
+import meditationSvg from 'assets/svg/mindfulness.svg'
+import yogaSvg from 'assets/svg/yoga.svg'
 
 export default {
 	id: 'classes',
