@@ -2,7 +2,7 @@ import React from 'react'
 import { FaEnvelope, FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
 import { animateScroll as scroll } from 'react-scroll'
 
-import { FooterContainer, FooterWrap, SocialIconLink, SocialIcons, SocialLogo, SocialMedia, SocialMediaWrap, WebsiteRights } from './FooterElements'
+import { Credits, FooterContainer, FooterWrap, SocialIconLink, SocialIcons, SocialLogo, SocialMedia, SocialMediaWrap, WebsiteRights } from './FooterElements'
 
 const Footer = () => {
 
@@ -16,7 +16,7 @@ const Footer = () => {
 				<SocialMedia>
 					<SocialMediaWrap>
 						<SocialLogo to='/' onClick={toggleHome}>TheGreekYogi</SocialLogo>
-						<WebsiteRights>TheGreekYogi © {new Date().getFullYear()}, All rights reserved</WebsiteRights>
+						<Credits>Website by Joel Dohm-Karatjas</Credits>
 						<SocialIcons>
 							<SocialIconLink href='mailto:stratis@thegreekyogi.info' target='_blank' aria-label='Facebook' rel='noopener noreferrer'>
 								<FaEnvelope onDragStart={preventDragHandler}/>

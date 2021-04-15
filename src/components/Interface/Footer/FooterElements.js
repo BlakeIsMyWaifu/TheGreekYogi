@@ -52,7 +52,7 @@ export const SocialLogo = styled(LinkR)`
 	font-weight: bold;
 `
 
-export const WebsiteRights = styled.small`
+export const Credits = styled.small`
 	color: ${white};
 	margin-bottom: 16px;
 `
