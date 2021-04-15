@@ -22,10 +22,7 @@ const App = () => {
 	const navbarToggle = () => setSidebarIsOpen(!sidebarIsOpen)
 
 	const [aboutMore, setAboutMore] = useState(false)
-	const aboutToggle = () => {
-		console.log('test')
-		setAboutMore(!aboutMore)
-	}
+	const aboutToggle = () => setAboutMore(!aboutMore)
 
 	const [blogMore, setBlogMore] = useState(false)
 	const blogToggle = () => setBlogMore(!blogMore)
