@@ -1,14 +1,11 @@
 {
   "name": "the-greek-yogi",
   "version": "1.0.0",
-  "description": "react app",
+  "description": "Website for @TheGreekYogi",
   "homepage": ".",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "predeploy": "react-scripts build",
     "deploy": "gh-pages -d build"
   },
   "author": "Joel Dohm-Karatjas",
