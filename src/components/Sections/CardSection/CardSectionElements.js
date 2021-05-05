@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-
 import { black, white } from 'utils/colours'
 
 export const CardsContainer = styled.div`
@@ -11,12 +10,9 @@ export const CardsContainer = styled.div`
 	align-items: center;
 	background: ${({ format }) => format ? white : black};
 	@media screen and (max-width: 768px) {
-		height: 1100px;
 		justify-content: flex-start;
 		padding-top: 100px;
-	}
-	@media screen and (max-width: 480px) {
-		height: 1300px;
+		padding-bottom: 80px;
 	}
 `
 
