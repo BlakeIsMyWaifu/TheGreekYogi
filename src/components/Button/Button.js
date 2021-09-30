@@ -1,9 +1,8 @@
-import { Link as LinkS } from 'react-scroll'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-
 import { black, green, white } from 'utils/colours'
 
-export default styled(LinkS)`
+export default styled(Link)`
 	border-radius: 50px;
 	white-space: nowrap;
 	background: ${green};
@@ -17,9 +16,10 @@ export default styled(LinkS)`
 	justify-content: center;
 	align-items: center;
 	transition: all 0.2s ease-in-out;
+	text-decoration: none;
 	&:hover {
 		transition: all 0.2s ease-in-out;
 		background: ${({ format }) => format ? black : white};
-		color: ${({ format }) => format ? white : black };
+		color: ${({ format }) => format ? white : black};
 	}
 `;

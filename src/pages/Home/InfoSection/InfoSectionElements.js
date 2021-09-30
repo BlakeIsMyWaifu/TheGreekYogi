@@ -1,5 +1,5 @@
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-
 import { black, green, white } from 'utils/colours'
 
 export const InfoContainer = styled.div`
@@ -83,11 +83,6 @@ export const Description = styled.p`
 	white-space: pre-wrap;
 `
 
-export const BtnWrap = styled.div`
-	display: flex;
-	justify-content: flex-start;
-`
-
 export const ImgWrap = styled.div`
 	max-width: 555px;
 	height: 100%;
@@ -98,4 +93,31 @@ export const Img = styled.img`
 	margin: 0 0 10px 0;
 	padding-right: 0;
 	pointer-events: none;
+`
+
+export const BtnWrap = styled(Link)`
+	display: flex;
+	justify-content: flex-start;
+	text-decoration: none;
+`
+
+export const Button = styled.button`
+	border-radius: 50px;
+	white-space: nowrap;
+	background: ${green};
+	padding: ${({ size }) => size ? '14px 48px' : '12px 30px'};
+	color: ${black};
+	font-size: ${({ size }) => size ? '20px' : '16px'};
+	outline: none;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.2s ease-in-out;
+	&:hover {
+		transition: all 0.2s ease-in-out;
+		background: ${({ format }) => format ? black : white};
+		color: ${({ format }) => format ? white : black};
+	}
 `

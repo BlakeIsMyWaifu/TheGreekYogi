@@ -13,11 +13,6 @@ export default {
 		img: stabilitySvg,
 		alt: 'one'
 	},
-	button: {
-		text: 'About',
-		link: 'about-more',
-		extend: true
-	},
 	more: [
 		{
 			title: '',

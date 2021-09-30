@@ -1,11 +1,9 @@
-import { Link as LinkR } from 'react-router-dom';
-import { Link as LinkS } from 'react-scroll';
-import styled from 'styled-components';
-
-import { black, green, white } from 'utils/colours';
+import { Link, NavLink } from 'react-router-dom'
+import styled from 'styled-components'
+import { green, white } from 'utils/colours'
 
 export const Nav = styled.nav`
-	background: ${({ scrollNav }) => scrollNav ? 'rgba(0, 0, 0, 0.8)' : 'transparent'};
+	background: ${props => !props.scrollNav && props.isHomePage ? 'transparent' : 'rgba(0, 0, 0, 0.8)'};
 	height: 80px;
 	margin-top: -80px;
 	display: flex;
@@ -30,7 +28,7 @@ export const NavbarContainer = styled.div`
 	max-width: 1100px;
 `
 
-export const NavLogo = styled(LinkR)`
+export const NavLogo = styled(Link)`
 	color: ${white};
 	justify-self: flex-start;
 	cursor: pointer;
@@ -72,18 +70,14 @@ export const NavMenu = styled.ul`
 	}
 `
 
-export const NavItem = styled.li`
-	height: 80px;
-`
-
-export const NavLinks = styled(LinkS)`
+export const NavLinkLink = styled(NavLink)`
 	color: ${green};
 	font-weight: bold;
 	display: flex;
 	align-items: center;
 	text-decoration: none;
 	padding: 0 1rem;
-	height: 100%;
+	height: 80px;
 	cursor: pointer;
 	&.active {
 		border-bottom: 3px solid ${green};

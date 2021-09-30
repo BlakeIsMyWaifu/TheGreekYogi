@@ -1,5 +1,4 @@
 import React from 'react'
-
 import useWindowSize from 'utils/Size'
 
 import { CardDetails, CardH2, CardIcon, CardMoreContainer, CardMoreWrapper, CardNormalContainer, CardP } from './CardElements'
@@ -11,15 +10,15 @@ const Card = ({ id, text, image, format, more, openCard, toggleCard }) => {
 	return id === openCard ? (
 		<CardMoreContainer id={id} format={format} onClick={() => toggleCard(id)} openCard={openCard} width={width} height={height}>
 			<CardMoreWrapper>
-				<CardIcon src={image.img} alt={image.alt}/>
+				<CardIcon src={image.img} alt={image.alt} />
 				<CardH2 format={format}>{text.title}</CardH2>
 				<CardDetails>({width >= 768 ? 'click' : 'tap'} for less details)</CardDetails>
 			</CardMoreWrapper>
-			<CardP>{more.join('\n\n')}</CardP>
+			<CardP format={format}>{more.join('\n\n')}</CardP>
 		</CardMoreContainer>
 	) : (!openCard) ? (
 		<CardNormalContainer id={id} format={format} onClick={() => toggleCard(id)} openCard={openCard} width={width}>
-			<CardIcon src={image.img} alt={image.alt}/>
+			<CardIcon src={image.img} alt={image.alt} />
 			<CardH2 format={format}>{text.title}</CardH2>
 			<CardP format={format}>{text.description}</CardP>
 			<CardDetails>({width >= 768 ? 'click' : 'tap'} for more details)</CardDetails>

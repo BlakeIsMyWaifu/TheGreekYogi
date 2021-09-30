@@ -1,6 +1,6 @@
 {
   "name": "the-greek-yogi",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Website for @TheGreekYogi",
   "homepage": ".",
   "scripts": {
@@ -15,24 +15,18 @@
     "react-scripts": "^4.0.3"
   },
   "dependencies": {
+    "leaflet": "^1.7.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.2.0",
+    "react-leaflet": "^3.2.0",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
-    "react-scroll": "^1.8.2",
     "styled-components": "^5.2.1"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ]
 }

@@ -1,8 +1,7 @@
+import contactSvg from 'assets/svg/contact.svg'
 import React from 'react'
 import { FaEnvelope, FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
 import styled from 'styled-components'
-
-import contactSvg from 'assets/svg/contact.svg'
 import { black, white } from 'utils/colours'
 
 const format = 1;
@@ -35,9 +34,5 @@ export default {
 		imgStart: false,
 		img: contactSvg,
 		alt: 'one'
-	},
-	button: {
-		text: 'View Classes',
-		link: 'classes'
 	}
 }

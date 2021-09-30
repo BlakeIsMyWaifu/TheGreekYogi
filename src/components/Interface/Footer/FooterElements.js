@@ -1,19 +1,16 @@
 import { Link as LinkR } from 'react-router-dom'
 import styled from 'styled-components'
-
 import { darkBlue, white } from 'utils/colours'
 
-export const FooterContainer = styled.footer`
+export const FooterContainer = styled.div`
+	position: relative;
 	background-color: ${darkBlue};
-`
-
-export const FooterWrap = styled.div`
 	padding: 16px 12px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	max-width: 1100px;
+	width: 100%;
 	margin: 0 auto;
 `
 
@@ -34,7 +31,7 @@ export const SocialMediaWrap = styled.div`
 	justify-content: space-between;
 	align-items: center;
 	max-width: 1100px;
-	margin: 40px auto 0 auto;
+	margin: 20px auto 0 auto;
 	@media screen and (max-width: 820px) {
 		flex-direction: column;
 	}

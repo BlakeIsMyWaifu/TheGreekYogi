@@ -10,7 +10,7 @@ export default {
 			id: 'kundalini',
 			text: {
 				title: 'Kundalini Yoga',
-				description: 'Tuesday Evenings 19:00-20:15',
+				description: 'Tuesday Evenings 19:00-20:00',
 			},
 			image: {
 				img: mindfulnessSvg,
@@ -25,7 +25,7 @@ export default {
 			id: 'hatha',
 			text: {
 				title: 'Hatha Yoga',
-				description: 'Thursday Evenings 19:00-20:00',
+				description: 'Thursday Evenings 19:30-20:30',
 			},
 			image: {
 				img: yogaSvg,

@@ -10,10 +10,11 @@ const Sidebar = ({ sidebarIsOpen, navbarToggle }) => {
 			</Icon>
 			<SidebarWrapper>
 				<SidebarMenu>
-					<SidebarLink to='classes' onClick={navbarToggle}>Classes</SidebarLink>
-					<SidebarLink to='about' onClick={navbarToggle}>About</SidebarLink>
-					<SidebarLink to='blog' onClick={navbarToggle}>Blog</SidebarLink>
-					<SidebarLink to='contact' onClick={navbarToggle}>Contact</SidebarLink>
+					<SidebarLink to='/#' onClick={navbarToggle}>Home</SidebarLink>
+					<SidebarLink to='/#classes' onClick={navbarToggle}>Classes</SidebarLink>
+					<SidebarLink to='/#about' onClick={navbarToggle}>About</SidebarLink>
+					<SidebarLink to='/#blog' onClick={navbarToggle}>Blog</SidebarLink>
+					<SidebarLink to='/#contact' onClick={navbarToggle}>Contact</SidebarLink>
 				</SidebarMenu>
 			</SidebarWrapper>
 		</SidebarContainer>

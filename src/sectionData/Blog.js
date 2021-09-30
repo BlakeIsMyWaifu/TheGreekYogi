@@ -13,11 +13,6 @@ export default {
 		img: SpcoailSvg,
 		alt: 'one'
 	},
-	button: {
-		text: 'Blog',
-		link: 'blog-more',
-		extend: true
-	},
 	more: [
 		{
 			title: 'Satnam (SAT = truth   NAM = my name, identity)',

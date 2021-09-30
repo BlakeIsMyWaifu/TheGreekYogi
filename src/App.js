@@ -1,57 +1,52 @@
-import React, { useState } from 'react'
-import { Route, BrowserRouter as Router, Switch } from 'react-router-dom'
+import './App.css'
 
 import Footer from 'components/Interface/Footer'
 import Navbar from 'components/Interface/Navbar'
 import Sidebar from 'components/Interface/Sidebar'
-import CardSection from 'components/Sections/CardSection/CardSection'
-import HeroSection from 'components/Sections/HeroSection'
-import InfoSection from 'components/Sections/InfoSection'
-import MoreSection from 'components/Sections/InfoSection/MoreSection'
-import About from 'sectionData/About'
-import Blog from 'sectionData/Blog'
-import Classes from 'sectionData/Classes'
-import Contact from 'sectionData/Contact'
-import LoadAtTop from  'utils/LoadAtTop'
+import ContactPage from 'pages/Contact'
+import Home from 'pages/Home'
+import InfoPage from 'pages/Info'
+import React, { useState } from 'react'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import aboutData from 'sectionData/About'
+import blogData from 'sectionData/Blog'
+import styled from 'styled-components'
+import LoadAtTop from 'utils/LoadAtTop'
 
-import './App.css'
+const Container = styled.div`
+	display: flex;
+	flex-direction: column;
+`
+
+const UnderNavbar = styled.div`
+	height: 80px;
+`
 
 const App = () => {
 
 	const [sidebarIsOpen, setSidebarIsOpen] = useState(false)
 	const navbarToggle = () => setSidebarIsOpen(!sidebarIsOpen)
 
-	const [aboutMore, setAboutMore] = useState(false)
-	const aboutToggle = () => setAboutMore(!aboutMore)
-
-	const [blogMore, setBlogMore] = useState(false)
-	const blogToggle = () => setBlogMore(!blogMore)
+	const [isHomePage, setIsHomePage] = useState(true)
 
 	return (
-		<Router>
-			<Switch>
-				<Route path='/'>
-					<LoadAtTop />
+		<Container>
+			<BrowserRouter>
+				<LoadAtTop />
+				<Sidebar sidebarIsOpen={sidebarIsOpen} navbarToggle={navbarToggle} />
+				<Navbar navbarToggle={navbarToggle} isHomePage={isHomePage} />
+				{!isHomePage && <UnderNavbar />}
 
-					<Sidebar sidebarIsOpen={sidebarIsOpen} navbarToggle={navbarToggle}/>
-					<Navbar navbarToggle={navbarToggle}/>
+				<Switch>
+					<Route path='/about' render={() => <InfoPage setIsHomePage={setIsHomePage} data={aboutData} />} />
+					<Route path='/blog' render={() => <InfoPage setIsHomePage={setIsHomePage} data={blogData} />} />
+					<Route path='/contact' render={() => <ContactPage setIsHomePage={setIsHomePage} />} />
+					<Route path='/' render={() => <Home setIsHomePage={setIsHomePage} />} />
+				</Switch>
 
-					<HeroSection />
-
-					<CardSection {...Classes}/>
-
-					<InfoSection {...About} toggle={aboutToggle} show={aboutMore}/>
-					<MoreSection {...About} show={aboutMore}/>
-
-					<InfoSection {...Blog} toggle={blogToggle} show={blogMore}/>
-					<MoreSection {...Blog} show={blogMore}/>
-
-					<InfoSection {...Contact}/>
-
-					<Footer />
-				</Route>
-			</Switch>
-		</Router>
+				<Footer />
+			</BrowserRouter>
+		</Container>
 	)
 }
 
