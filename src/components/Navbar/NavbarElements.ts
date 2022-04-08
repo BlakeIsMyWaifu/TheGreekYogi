@@ -83,7 +83,7 @@ export const NavLinkLink = styled(NavLink)`
 	padding: 0 1rem;
 	height: 80px;
 	cursor: pointer;
-	&.active {
+	&.current {
 		border-bottom: 3px solid ${green};
 	}
 `

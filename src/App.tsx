@@ -7,7 +7,7 @@ import ContactPage from 'pages/Contact'
 import Home from 'pages/Home'
 import InfoPage from 'pages/Info'
 import React, { useState } from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import aboutData from 'sectionData/About'
 import blogData from 'sectionData/Blog'
 import styled from 'styled-components'
@@ -28,12 +28,12 @@ const App: React.FC = () => {
 				<Sidebar sidebarIsOpen={sidebarIsOpen} navbarToggle={navbarToggle} />
 				<Navbar navbarToggle={navbarToggle} />
 
-				<Switch>
-					<Route path='/about' render={() => <InfoPage data={aboutData} />} />
-					<Route path='/blog' render={() => <InfoPage data={blogData} />} />
-					<Route path='/contact' render={() => <ContactPage />} />
-					<Route path='/' render={() => <Home />} />
-				</Switch>
+				<Routes>
+					<Route path='/about' element={<InfoPage data={aboutData} />} />
+					<Route path='/blog' element={<InfoPage data={blogData} />} />
+					<Route path='/contact' element={<ContactPage />} />
+					<Route path='/' element={<Home />} />
+				</Routes>
 
 				<Footer />
 			</BrowserRouter>

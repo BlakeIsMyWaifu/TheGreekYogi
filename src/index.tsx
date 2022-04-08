@@ -1,5 +1,14 @@
-import ReactDom from 'react-dom'
+import React from 'react'
+import ReactDOMClient from 'react-dom/client'
 
 import App from './App'
 
-ReactDom.render(<App />, document.getElementById('app'))
+const container = document.getElementById('app') as HTMLElement
+
+const root = ReactDOMClient.createRoot(container)
+
+root.render(
+	<React.StrictMode>
+		<App />
+	</React.StrictMode>
+)

@@ -24,7 +24,7 @@ const Navbar: React.FC<NavbarComponent> = ({ navbarToggle }) => {
 		window.addEventListener('scroll', changeNav)
 	}, [hash, pathname])
 
-	const isActive = (section: string) => () => {
+	const isCurrent = (section: string) => {
 		return hash === `#${section}` || pathname === `/${section}`
 	}
 
@@ -38,10 +38,10 @@ const Navbar: React.FC<NavbarComponent> = ({ navbarToggle }) => {
 					<FaBars />
 				</MobileIcon>
 				<NavMenu>
-					<NavLinkLink to='/#classes' isActive={isActive('classes')}>Classes</NavLinkLink>
-					<NavLinkLink to='/#about' isActive={isActive('about')}>About</NavLinkLink>
-					<NavLinkLink to='/#blog' isActive={isActive('blog')}>Blog</NavLinkLink>
-					<NavLinkLink to='/#contact' isActive={isActive('contact')}>Contact</NavLinkLink>
+					<NavLinkLink to='/#classes' className={isCurrent('classes') ? 'current' : ''}>Classes</NavLinkLink>
+					<NavLinkLink to='/#about' className={isCurrent('about') ? 'current' : ''}>About</NavLinkLink>
+					<NavLinkLink to='/#blog' className={isCurrent('blog') ? 'current' : ''}>Blog</NavLinkLink>
+					<NavLinkLink to='/#contact' className={isCurrent('contact') ? 'current' : ''}>Contact</NavLinkLink>
 				</NavMenu>
 			</NavbarContainer>
 		</Nav >
