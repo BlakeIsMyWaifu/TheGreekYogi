@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 
-export default function LoadAtTop() {
+export default function LoadAtTop(): null {
 	const { pathname } = useLocation()
 
 	useEffect(() => {

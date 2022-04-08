@@ -10,12 +10,12 @@ interface InfoSectionComponent {
 		category: string;
 		title: string;
 		description: string | any;
-	}
+	};
 	image: {
 		imgStart: boolean;
 		img: string;
 		alt: string;
-	}
+	};
 	childRef: any;
 }
 

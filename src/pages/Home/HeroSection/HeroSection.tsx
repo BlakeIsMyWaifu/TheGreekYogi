@@ -1,6 +1,6 @@
 import Video from 'assets/BeachVideo.mp4'
 import Button from 'components/Button'
-import React, { useState } from 'react'
+import { useState } from 'react'
 import useWindowSize from 'utils/Size'
 
 import { ArrowForward, ArrowRight, HeroBg, HeroBtnWrapper, HeroContainer, HeroContent, HeroH1, HeroP, VideoBg } from './HeroSectionElements'

@@ -8,7 +8,7 @@ const blog: InfoData = {
 	text: {
 		category: 'Blog',
 		title: 'Blog About Yoga',
-		description: 'Yoga short articles and information',
+		description: 'Yoga short articles and information'
 	},
 	image: {
 		imgStart: true,

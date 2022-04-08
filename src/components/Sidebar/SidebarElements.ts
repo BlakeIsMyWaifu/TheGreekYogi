@@ -1,7 +1,7 @@
-import { FaTimes } from 'react-icons/fa';
-import { Link as LinkR } from 'react-router-dom';
-import styled from 'styled-components';
-import { black, white } from 'utils/colours';
+import { FaTimes } from 'react-icons/fa'
+import { Link as LinkR } from 'react-router-dom'
+import styled from 'styled-components'
+import { black, white } from 'utils/colours'
 
 interface SidebarContainerStyled {
 	sidebarIsOpen: boolean;

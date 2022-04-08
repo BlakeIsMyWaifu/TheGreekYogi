@@ -8,7 +8,7 @@ const about: InfoData = {
 	text: {
 		category: 'About',
 		title: 'About @TheGreekYogi',
-		description: '',
+		description: ''
 	},
 	image: {
 		imgStart: false,

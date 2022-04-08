@@ -1,4 +1,4 @@
-import React, { createRef, useEffect, useRef } from 'react'
+import { createRef, useEffect, useRef } from 'react'
 import { useLocation } from 'react-router'
 import about from 'sectionData/About'
 import blog from 'sectionData/Blog'
@@ -6,9 +6,9 @@ import Classes from 'sectionData/Classes'
 import contact from 'sectionData/Contact'
 import useWindowSize from 'utils/Size'
 
-import CardSection from './CardSection/CardSection'
-import HeroSection from './HeroSection/HeroSection'
-import InfoSection from './InfoSection/InfoSection'
+import CardSection from './CardSection'
+import HeroSection from './HeroSection'
+import InfoSection from './InfoSection'
 
 const Home: React.FC = () => {
 
@@ -20,7 +20,7 @@ const Home: React.FC = () => {
 
 	useEffect(() => {
 		if (location.hash) {
-			let element = document.getElementById(location.hash.slice(1));
+			const element = document.getElementById(location.hash.slice(1))
 			if (element) {
 				window.scrollTo({ top: element.getBoundingClientRect().top + window.scrollY - 80, behavior: 'smooth' })
 			}

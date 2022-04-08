@@ -1,5 +1,4 @@
 import Page from 'components/Page'
-import React from 'react'
 import { InfoData } from 'sectionData/sectionData'
 
 import { Container, SectionDescription, SectionTitle, SectionWrapper, Title } from './InfoElements'

@@ -3,10 +3,10 @@ import './App.css'
 import Footer from 'components/Footer'
 import Navbar from 'components/Navbar/Navbar'
 import Sidebar from 'components/Sidebar'
-import ContactPage from 'pages/Contact'
+import Contact from 'pages/Contact'
 import Home from 'pages/Home'
 import InfoPage from 'pages/Info'
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import aboutData from 'sectionData/About'
 import blogData from 'sectionData/Blog'
@@ -31,7 +31,7 @@ const App: React.FC = () => {
 				<Routes>
 					<Route path='/about' element={<InfoPage data={aboutData} />} />
 					<Route path='/blog' element={<InfoPage data={blogData} />} />
-					<Route path='/contact' element={<ContactPage />} />
+					<Route path='/contact' element={<Contact />} />
 					<Route path='/' element={<Home />} />
 				</Routes>
 

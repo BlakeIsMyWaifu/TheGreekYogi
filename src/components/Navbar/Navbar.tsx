@@ -1,5 +1,5 @@
 import logo from 'assets/logo/logo_green.png'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { FaBars } from 'react-icons/fa'
 
 import { MobileIcon, Nav, NavLinkLink, NavLogo, NavLogoImage, NavMenu, NavbarContainer } from './NavbarElements'
@@ -32,7 +32,7 @@ const Navbar: React.FC<NavbarComponent> = ({ navbarToggle }) => {
 		<Nav scrollNav={scrollNav && pathname === '/'}>
 			<NavbarContainer>
 				<NavLogo to='/'>
-					<NavLogoImage src={logo} alt='logo'></NavLogoImage>
+					<NavLogoImage src={logo} alt='logo' />
 				</NavLogo>
 				<MobileIcon onClick={navbarToggle}>
 					<FaBars />

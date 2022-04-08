@@ -1,10 +1,9 @@
 import contactSvg from 'assets/svg/contact.svg'
-import React from 'react'
 import { FaEnvelope, FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
 import styled from 'styled-components'
 import { black, white } from 'utils/colours'
 
-const format = 1;
+const format = 1
 
 const Link = styled.a`
 	text-decoration: none;
@@ -14,9 +13,9 @@ const Link = styled.a`
 const description: React.FC = () => {
 	return (
 		<>
-			<Link href='mailto:stratis@thegreekyogi.info' target='_blank' rel='noopener noreferrer'><FaEnvelope /> stratis@thegreekyogi.info </Link> <br></br>
-			<Link href='//facebook.com/thegreekyogi' target='_blank' rel='noopener noreferrer'><FaFacebook /> facebook.com/thegreekyogi </Link> <br></br>
-			<Link href='//twitter.com/greek_yogi' target='_blank' rel='noopener noreferrer'><FaTwitter /> twitter.com/greek_yogi </Link> <br></br>
+			<Link href='mailto:stratis@thegreekyogi.info' target='_blank' rel='noopener noreferrer'><FaEnvelope /> stratis@thegreekyogi.info </Link> <br />
+			<Link href='//facebook.com/thegreekyogi' target='_blank' rel='noopener noreferrer'><FaFacebook /> facebook.com/thegreekyogi </Link> <br />
+			<Link href='//twitter.com/greek_yogi' target='_blank' rel='noopener noreferrer'><FaTwitter /> twitter.com/greek_yogi </Link> <br />
 			<Link href='//instagram.com/thegreekyogi' target='_blank' rel='noopener noreferrer'><FaInstagram /> instagram.com/thegreekyogi </Link>
 		</>
 	)

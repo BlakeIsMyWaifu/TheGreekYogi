@@ -10,13 +10,13 @@ interface ClassesData extends SectionData {
 		text: {
 			title: string;
 			description: string;
-		},
+		};
 		image: {
 			img: string;
 			alt: string;
-		}
+		};
 		more: string[];
-	}[]
+	}[];
 }
 
 const Classes: ClassesData = {
@@ -27,7 +27,7 @@ const Classes: ClassesData = {
 			id: 'kundalini',
 			text: {
 				title: 'Kundalini Yoga',
-				description: 'Tuesday Evenings 19:00-20:00',
+				description: 'Tuesday Evenings 19:00-20:00'
 			},
 			image: {
 				img: mindfulnessSvg,
@@ -42,7 +42,7 @@ const Classes: ClassesData = {
 			id: 'hatha',
 			text: {
 				title: 'Hatha Yoga',
-				description: 'Thursday Evenings 19:30-20:30',
+				description: 'Thursday Evenings 19:30-20:30'
 			},
 			image: {
 				img: yogaSvg,

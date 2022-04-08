@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { CloseIcon, Icon, SidebarContainer, SidebarLink, SidebarMenu, SidebarWrapper } from './SidebarElements'
 
 interface SidebarComponent {

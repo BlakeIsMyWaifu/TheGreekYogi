@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaEnvelope, FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa'
 
 import { Credits, FooterContainer, SocialIconLink, SocialIcons, SocialLogo, SocialMedia, SocialMediaWrap } from './FooterElements'

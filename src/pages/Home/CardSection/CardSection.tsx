@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import useWindowSize from 'utils/Size'
 
 import Card from './Card/Card'

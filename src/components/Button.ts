@@ -27,4 +27,4 @@ export default styled(Link) <ButtonStyled>`
 		background: ${({ format }) => format ? black : white};
 		color: ${({ format }) => format ? white : black};
 	}
-`;
+`
