@@ -3,11 +3,11 @@ import { Link as LinkR } from 'react-router-dom'
 import styled from 'styled-components'
 import { black, white } from 'utils/colours'
 
-interface SidebarContainerStyled {
+interface SidebarContainerProps {
 	sidebarIsOpen: boolean;
 }
 
-export const SidebarContainer = styled.aside<SidebarContainerStyled>`
+export const SidebarContainer = styled.aside<SidebarContainerProps>`
 	position: fixed;
 	z-index: 999;
 	width: 100%;

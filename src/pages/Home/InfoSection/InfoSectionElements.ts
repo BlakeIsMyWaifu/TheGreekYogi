@@ -2,12 +2,12 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { black, green, white } from 'utils/colours'
 
-interface InfoContainerStyled {
+interface InfoContainerProps {
 	format: number;
 	height: number;
 }
 
-export const InfoContainer = styled.div<InfoContainerStyled>`
+export const InfoContainer = styled.div<InfoContainerProps>`
 	color: ${white};
 	background: ${({ format }) => format ? white : black};
 	height: auto;
@@ -17,11 +17,11 @@ export const InfoContainer = styled.div<InfoContainerStyled>`
 	}
 `
 
-interface InfoWrapperStyled {
+interface InfoWrapperProps {
 	height: number;
 }
 
-export const InfoWrapper = styled.div<InfoWrapperStyled>`
+export const InfoWrapper = styled.div<InfoWrapperProps>`
 	display: grid;
 	z-index: 1;
 	height: auto;
@@ -34,11 +34,11 @@ export const InfoWrapper = styled.div<InfoWrapperStyled>`
 	justify-content: center;
 `
 
-interface InfoRowStyled {
+interface InfoRowProps {
 	imgStart: boolean;
 }
 
-export const InfoRow = styled.div<InfoRowStyled>`
+export const InfoRow = styled.div<InfoRowProps>`
 	display: grid;
 	grid-auto-columns: minmax(auto, 1fr);
 	align-items: center;
@@ -76,11 +76,11 @@ export const Category = styled.p`
 	margin-bottom: 16px;
 `
 
-interface HeadingStyled {
+interface HeadingProps {
 	format: number;
 }
 
-export const Heading = styled.h1<HeadingStyled>`
+export const Heading = styled.h1<HeadingProps>`
 	margin-bottom: 24px;
 	font-size: 48px;
 	line-height: 1.1;
@@ -91,11 +91,11 @@ export const Heading = styled.h1<HeadingStyled>`
 	}
 `
 
-interface DescriptionStyled {
+interface DescriptionProps {
 	format: number;
 }
 
-export const Description = styled.p<DescriptionStyled>`
+export const Description = styled.p<DescriptionProps>`
 	max-width: 440px;
 	margin-bottom: 35px;
 	font-size: 18px;
@@ -122,12 +122,12 @@ export const BtnWrap = styled(Link)`
 	text-decoration: none;
 `
 
-interface ButtonStyled {
+interface ButtonProps {
 	size?: number;
 	format: number;
 }
 
-export const Button = styled.button<ButtonStyled>`
+export const Button = styled.button<ButtonProps>`
 	border-radius: 50px;
 	white-space: nowrap;
 	background: ${green};

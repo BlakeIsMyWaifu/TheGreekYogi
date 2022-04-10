@@ -2,12 +2,12 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { black, green, white } from 'utils/colours'
 
-interface ButtonStyled {
+interface ButtonProps {
 	size?: number;
 	format?: number;
 }
 
-export default styled(Link) <ButtonStyled>`
+export const Button = styled(Link) <ButtonProps>`
 	border-radius: 50px;
 	white-space: nowrap;
 	background: ${green};
@@ -28,3 +28,5 @@ export default styled(Link) <ButtonStyled>`
 		color: ${({ format }) => format ? white : black};
 	}
 `
+
+export default Button

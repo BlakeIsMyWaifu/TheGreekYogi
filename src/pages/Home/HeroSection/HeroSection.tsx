@@ -5,11 +5,11 @@ import useWindowSize from 'utils/Size'
 
 import { ArrowForward, ArrowRight, HeroBg, HeroBtnWrapper, HeroContainer, HeroContent, HeroH1, HeroP, VideoBg } from './HeroSectionElements'
 
-interface HeroSectionComponent {
+interface HeroSectionProps {
 	childRef: React.RefObject<HTMLDivElement>;
 }
 
-const HeroSection: React.FC<HeroSectionComponent> = ({ childRef }) => {
+const HeroSection: React.FC<HeroSectionProps> = ({ childRef }) => {
 
 	const [hover, setHover] = useState(false)
 	const onHover = (): void => setHover(!hover)

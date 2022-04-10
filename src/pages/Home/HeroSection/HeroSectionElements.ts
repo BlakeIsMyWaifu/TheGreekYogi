@@ -2,11 +2,11 @@ import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md'
 import styled from 'styled-components'
 import { white } from 'utils/colours'
 
-interface HeroContainerStyled {
+interface HeroContainerProps {
 	height: number;
 }
 
-export const HeroContainer = styled.div<HeroContainerStyled>`
+export const HeroContainer = styled.div<HeroContainerProps>`
 	background: #0c0c0c;
 	display: flex;
 	justify-content: center;

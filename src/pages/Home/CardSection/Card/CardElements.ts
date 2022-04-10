@@ -23,13 +23,13 @@ const slideDown = keyframes`
 	}
 `
 
-interface ContainerStyled {
+interface ContainerProps {
 	format: number;
 	openCard: string | null;
 	width: number;
 }
 
-const Container = styled.div<ContainerStyled>`
+const Container = styled.div<ContainerProps>`
 	background: ${({ format }) => format ? black : white};
 	border-radius: 10px;
 	max-height: 340px;
@@ -41,7 +41,7 @@ const Container = styled.div<ContainerStyled>`
 	cursor: pointer;
 `
 
-export const CardNormalContainer = styled(Container) <ContainerStyled>`
+export const CardNormalContainer = styled(Container) <ContainerProps>`
 	flex-direction: column;
 	transition: all 0.2s ease-in-out;
 	width: 320px;
@@ -52,11 +52,11 @@ export const CardNormalContainer = styled(Container) <ContainerStyled>`
 	animation: ${slideDown} 0.4s ease-in-out;
 `
 
-interface CardMoreContainerComponent extends ContainerStyled {
+interface CardMoreContainerProps extends ContainerProps {
 	height: number;
 }
 
-export const CardMoreContainer = styled(Container) <CardMoreContainerComponent>`
+export const CardMoreContainer = styled(Container) <CardMoreContainerProps>`
 	animation: ${slideUp} 0.4s ease-in-out;
 	@media screen and (max-width: 758px) {
 		min-height: ${({ height }) => height}px;
@@ -76,21 +76,21 @@ export const CardIcon = styled.img`
 	margin-bottom: 10px;
 `
 
-interface CardH2Component {
+interface CardH2Props {
 	format: number;
 }
 
-export const CardH2 = styled.h2<CardH2Component>`
+export const CardH2 = styled.h2<CardH2Props>`
 	font-size: 1.2rem;
 	margin-bottom: 10px;
 	color: ${({ format }) => format ? white : black};
 `
 
-interface CardPComponent {
+interface CardPProps {
 	format: number;
 }
 
-export const CardP = styled.p<CardPComponent>`
+export const CardP = styled.p<CardPProps>`
 	font-size: 1rem;
 	text-align: center;
 	margin-bottom: 10px;

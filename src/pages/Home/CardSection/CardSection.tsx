@@ -5,14 +5,14 @@ import useWindowSize from 'utils/Size'
 import Card from './Card/Card'
 import { CardsContainer, CardsH1, CardsWrapper } from './CardSectionElements'
 
-interface CardSectionComponent {
+interface CardSectionProps {
 	id: string;
 	format: number;
 	data: ClassData[];
 	childRef: React.RefObject<HTMLDivElement>;
 }
 
-const CardSection: React.FC<CardSectionComponent> = ({ id, format, data, childRef }) => {
+const CardSection: React.FC<CardSectionProps> = ({ id, format, data, childRef }) => {
 
 	const { height } = useWindowSize()
 

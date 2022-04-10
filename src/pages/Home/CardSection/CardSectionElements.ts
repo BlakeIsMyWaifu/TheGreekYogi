@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 import { black, white } from 'utils/colours'
 
-interface CardsContainerStyled {
+interface CardsContainerProps {
 	height: number;
 	format: number;
 }
 
-export const CardsContainer = styled.div<CardsContainerStyled>`
+export const CardsContainer = styled.div<CardsContainerProps>`
 	height: auto;
 	min-height: ${({ height }) => `calc(${height}px - 80px)`};
 	display: flex;
@@ -21,11 +21,11 @@ export const CardsContainer = styled.div<CardsContainerStyled>`
 	}
 `
 
-interface CardsH1Styled {
+interface CardsH1Props {
 	format: number;
 }
 
-export const CardsH1 = styled.h1<CardsH1Styled>`
+export const CardsH1 = styled.h1<CardsH1Props>`
 	font-size: 3rem;
 	color: ${({ format }) => format ? black : white};
 	margin-bottom: 64px;

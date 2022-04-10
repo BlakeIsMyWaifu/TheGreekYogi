@@ -3,11 +3,11 @@ import { InfoData } from 'sectionData/sectionData'
 
 import { Container, SectionDescription, SectionTitle, SectionWrapper, Title } from './InfoElements'
 
-interface InfoPageComponent {
+interface InfoPageProps {
 	data: InfoData;
 }
 
-const InfoPage: React.FC<InfoPageComponent> = ({ data }) => {
+const InfoPage: React.FC<InfoPageProps> = ({ data }) => {
 
 	return (
 		<Page>

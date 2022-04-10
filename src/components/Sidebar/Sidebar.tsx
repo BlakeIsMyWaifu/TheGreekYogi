@@ -1,11 +1,11 @@
 import { CloseIcon, Icon, SidebarContainer, SidebarLink, SidebarMenu, SidebarWrapper } from './SidebarElements'
 
-interface SidebarComponent {
+interface SidebarProps {
 	sidebarIsOpen: boolean;
 	navbarToggle: () => void;
 }
 
-const Sidebar: React.FC<SidebarComponent> = ({ sidebarIsOpen, navbarToggle }) => {
+const Sidebar: React.FC<SidebarProps> = ({ sidebarIsOpen, navbarToggle }) => {
 	return (
 		<SidebarContainer sidebarIsOpen={sidebarIsOpen} onClick={navbarToggle}>
 			<Icon>

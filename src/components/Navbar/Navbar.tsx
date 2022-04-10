@@ -4,11 +4,11 @@ import { FaBars } from 'react-icons/fa'
 
 import { MobileIcon, Nav, NavLinkLink, NavLogo, NavLogoImage, NavMenu, NavbarContainer } from './NavbarElements'
 
-interface NavbarComponent {
+interface NavbarProps {
 	navbarToggle: () => void;
 }
 
-const Navbar: React.FC<NavbarComponent> = ({ navbarToggle }) => {
+const Navbar: React.FC<NavbarProps> = ({ navbarToggle }) => {
 
 	const [hash, setHash] = useState(window.location.hash)
 	const [pathname, setPathname] = useState(window.location.pathname)

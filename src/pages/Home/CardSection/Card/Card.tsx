@@ -3,13 +3,13 @@ import useWindowSize from 'utils/Size'
 
 import { CardDetails, CardH2, CardIcon, CardMoreContainer, CardMoreWrapper, CardNormalContainer, CardP } from './CardElements'
 
-interface CardComponent extends ClassData {
+interface CardProps extends ClassData {
 	format: number;
 	openCard: string | null;
 	toggleCard: (card: string) => void;
 }
 
-const Card: React.FC<CardComponent> = ({ id, text, image, format, more, openCard, toggleCard }) => {
+const Card: React.FC<CardProps> = ({ id, text, image, format, more, openCard, toggleCard }) => {
 
 	const { width, height } = useWindowSize()
 

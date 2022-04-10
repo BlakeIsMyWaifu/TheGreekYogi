@@ -2,11 +2,11 @@ import { Link, NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 import { green, white } from 'utils/colours'
 
-interface NavStyled {
+interface NavProps {
 	scrollNav: boolean;
 }
 
-export const Nav = styled.nav<NavStyled>`
+export const Nav = styled.nav<NavProps>`
 	background: ${({ scrollNav }) => !scrollNav ? 'rgba(0, 0, 0, 0.8)' : 'transparent'};
 	height: 80px;
 	margin-top: -80px;

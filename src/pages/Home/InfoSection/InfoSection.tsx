@@ -3,7 +3,7 @@ import useWindowSize from 'utils/Size'
 
 import { BtnWrap, Button, Category, Column1, Column2, Description, Heading, Img, ImgWrap, InfoContainer, InfoRow, InfoWrapper, TextWrapper } from './InfoSectionElements'
 
-interface InfoSectionComponent {
+interface InfoSectionProps {
 	id: string;
 	format: number;
 	text: {
@@ -19,7 +19,7 @@ interface InfoSectionComponent {
 	childRef: React.RefObject<HTMLDivElement>;
 }
 
-const InfoSection: React.FC<InfoSectionComponent> = ({ id, format, text, image, childRef }) => {
+const InfoSection: React.FC<InfoSectionProps> = ({ id, format, text, image, childRef }) => {
 
 	const { height } = useWindowSize()
 
