@@ -9,14 +9,14 @@ interface InfoSectionComponent {
 	text: {
 		category: string;
 		title: string;
-		description: string | any;
+		description: string | React.FC;
 	};
 	image: {
 		imgStart: boolean;
 		img: string;
 		alt: string;
 	};
-	childRef: any;
+	childRef: React.RefObject<HTMLDivElement>;
 }
 
 const InfoSection: React.FC<InfoSectionComponent> = ({ id, format, text, image, childRef }) => {
@@ -31,7 +31,7 @@ const InfoSection: React.FC<InfoSectionComponent> = ({ id, format, text, image, 
 						<TextWrapper>
 							<Category>{text.category}</Category>
 							<Heading format={format}>{text.title}</Heading>
-							<Description format={format}>{typeof text.description === 'string' ? text.description : text.description()}</Description>
+							<Description format={format}>{typeof text.description === 'string' ? text.description : text.description({ props: {} })}</Description>
 							<BtnWrap to={id}>
 								<Button format={format}>View {id} page</Button>
 							</BtnWrap>

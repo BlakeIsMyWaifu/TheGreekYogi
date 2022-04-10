@@ -4,19 +4,21 @@ import yogaSvg from 'assets/svg/yoga.svg'
 
 import { SectionData } from './sectionData'
 
+export interface ClassData {
+	id: string;
+	text: {
+		title: string;
+		description: string;
+	};
+	image: {
+		img: string;
+		alt: string;
+	};
+	more: string[];
+}
+
 interface ClassesData extends SectionData {
-	data: {
-		id: string;
-		text: {
-			title: string;
-			description: string;
-		};
-		image: {
-			img: string;
-			alt: string;
-		};
-		more: string[];
-	}[];
+	data: ClassData[];
 }
 
 const Classes: ClassesData = {

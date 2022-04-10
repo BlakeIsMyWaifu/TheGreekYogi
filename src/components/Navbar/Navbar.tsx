@@ -14,7 +14,7 @@ const Navbar: React.FC<NavbarComponent> = ({ navbarToggle }) => {
 	const [pathname, setPathname] = useState(window.location.pathname)
 
 	const [scrollNav, setScrollNav] = useState(true)
-	const changeNav = () => {
+	const changeNav = (): void => {
 		setHash(window.location.hash)
 		setPathname(window.location.pathname)
 		setScrollNav(window.scrollY + 80 <= window.innerHeight)
@@ -24,7 +24,7 @@ const Navbar: React.FC<NavbarComponent> = ({ navbarToggle }) => {
 		window.addEventListener('scroll', changeNav)
 	}, [hash, pathname])
 
-	const isCurrent = (section: string) => {
+	const isCurrent = (section: string): boolean => {
 		return hash === `#${section}` || pathname === `/${section}`
 	}
 

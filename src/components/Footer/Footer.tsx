@@ -4,7 +4,7 @@ import { Credits, FooterContainer, SocialIconLink, SocialIcons, SocialLogo, Soci
 
 const Footer: React.FC = () => {
 
-	const preventDragHandler = (event: React.DragEvent<SVGAElement>) => event.preventDefault()
+	const preventDragHandler = (event: React.DragEvent<SVGAElement>): void => event.preventDefault()
 
 	return (
 		<FooterContainer>

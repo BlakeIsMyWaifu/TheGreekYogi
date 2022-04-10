@@ -5,12 +5,12 @@ interface windowSize {
 	width: number;
 }
 
-export function useWindowSize(): windowSize {
+export const useWindowSize = (): windowSize => {
 
 	const [size, setSize] = useState<[number, number]>([0, 0])
 	useLayoutEffect(() => {
 
-		function updateSize() {
+		const updateSize = (): void => {
 			setSize([window.innerWidth, window.innerHeight])
 		}
 

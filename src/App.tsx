@@ -20,7 +20,7 @@ const Container = styled.div`
 const App: React.FC = () => {
 
 	const [sidebarIsOpen, setSidebarIsOpen] = useState(false)
-	const navbarToggle = () => setSidebarIsOpen(!sidebarIsOpen)
+	const navbarToggle = (): void => setSidebarIsOpen(!sidebarIsOpen)
 
 	return (
 		<Container>

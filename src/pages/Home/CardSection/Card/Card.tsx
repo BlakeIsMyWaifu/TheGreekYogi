@@ -1,19 +1,10 @@
+import { ClassData } from 'sectionData/Classes'
 import useWindowSize from 'utils/Size'
 
 import { CardDetails, CardH2, CardIcon, CardMoreContainer, CardMoreWrapper, CardNormalContainer, CardP } from './CardElements'
 
-interface CardComponent {
-	id: string;
-	text: {
-		title: string;
-		description: string;
-	};
-	image: {
-		img: string;
-		alt: string;
-	};
+interface CardComponent extends ClassData {
 	format: number;
-	more: string[];
 	openCard: string | null;
 	toggleCard: (card: string) => void;
 }

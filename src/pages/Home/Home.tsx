@@ -1,4 +1,4 @@
-import { createRef, useEffect, useRef } from 'react'
+import React, { createRef, useEffect, useRef } from 'react'
 import { useLocation } from 'react-router'
 import about from 'sectionData/About'
 import blog from 'sectionData/Blog'
@@ -15,8 +15,7 @@ const Home: React.FC = () => {
 	const location = useLocation()
 	const { height } = useWindowSize()
 
-	const sectionRefs = useRef<any[]>([])
-	sectionRefs.current = [0, 0, 0, 0, 0].map((_ref, index) => sectionRefs.current[index] = createRef())
+	const sectionRefs = useRef(Array.from({ length: 5 }, _ref => createRef<HTMLDivElement>()))
 
 	useEffect(() => {
 		if (location.hash) {
@@ -38,17 +37,18 @@ const Home: React.FC = () => {
 		}, { threshold: 0.75 })
 
 		sectionRefs.current.forEach(section => {
+			if (!section.current) return
 			observer.observe(section.current)
 		})
 	}, [location, height])
 
 	return (
 		<>
-			<HeroSection childRef={sectionRefs.current[0]} />
-			<CardSection childRef={sectionRefs.current[1]} {...Classes} />
-			<InfoSection childRef={sectionRefs.current[2]} {...about} />
-			<InfoSection childRef={sectionRefs.current[3]} {...blog} />
-			<InfoSection childRef={sectionRefs.current[4]} {...contact} />
+			<HeroSection childRef={sectionRefs.current[0] as React.RefObject<HTMLDivElement>} />
+			<CardSection childRef={sectionRefs.current[1] as React.RefObject<HTMLDivElement>} {...Classes} />
+			<InfoSection childRef={sectionRefs.current[2] as React.RefObject<HTMLDivElement>} {...about} />
+			<InfoSection childRef={sectionRefs.current[3] as React.RefObject<HTMLDivElement>} {...blog} />
+			<InfoSection childRef={sectionRefs.current[4] as React.RefObject<HTMLDivElement>} {...contact} />
 		</>
 	)
 }
