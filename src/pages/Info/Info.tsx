@@ -8,7 +8,6 @@ interface InfoPageProps {
 }
 
 const InfoPage: React.FC<InfoPageProps> = ({ data }) => {
-
 	return (
 		<Page>
 			<Container id={data.id}>
